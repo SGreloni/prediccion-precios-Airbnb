@@ -7,6 +7,8 @@ import geopy
 import xgboost
 import pickle
 from PIL import Image
+import numpy as np
+np.bool = np.bool_ #to prevent an error from occurring
 
 modelo = pickle.load(open("price_model.pickle.dat", "rb"))
 
