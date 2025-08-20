@@ -80,8 +80,8 @@ st.markdown("### Ubicación")
 if st.checkbox("Prefiero escribir la dirección o esquina más cercana"):
     direccion = st.text_input("Escriba la dirección de la propiedad o la esquina más cercana. (Si aparece un mensaje de \
     error escriba la dirección de otra forma o destilde el checkbox para escribir la latitud y longitud.)")
-    locator = geopy.geocoders.Nominatim(user_agent="AirbnbPrecios")
-    location = locator.geocode("{}, CABA, Argentina".format(direccion))
+    locator = geopy.geocoders.Nominatim(user_agent="AirbnbPrecios", timeout=10)
+    location = locator.geocode(f"{direccion}, Ciudad Autónoma de Buenos Aires, Argentina")
     latitud = location.latitude
     longitud = location.longitude
 else:
