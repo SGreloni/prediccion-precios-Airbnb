@@ -1,7 +1,7 @@
-numpy==1.26.4
+xgboost==1.2.0
 pandas==1.5.3
-xgboost==1.7.6
-geopy==2.4.1
-Pillow==10.4.0
-streamlit==1.36.0
-protobuf==4.25.3
+geopy==2.1.0
+Pillow==9.4.0
+streamlit==0.73.1
+protobuf==3.20.1
+numpy==1.26.4
